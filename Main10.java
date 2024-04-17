@@ -1,5 +1,3 @@
-package Atcoder;
-
 import java.util.Scanner;
 
 public class Main10 {

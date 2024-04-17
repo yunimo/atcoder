@@ -1,5 +1,3 @@
-package Atcoder;
-
 //修正点 indexの確認が甘かった miss: N - 1 が N
 //for文の範囲 miss: <= が <
 //N = 1 のとき判定できない

@@ -1,4 +1,3 @@
-package Atcoder;
 import java.util.Scanner;
 
 public class ABC155B {
