@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ABC352B {
+public class ABC352Bre {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,12 +14,14 @@ public class ABC352B {
             char s = S.charAt(s_num);
             for (int i = t_num; i < T.length(); i++) {
                 if (s == T.charAt(i)) {
-                    s_num++;
-                    t_num = i+1;
                     System.out.print(i + 1 + " ");
-                    if (S.charAt(S.length() - 1) == s) {
+                    if (s_num == S.length() - 1) {
                         con = false;
+                        break;
                     }
+                    s_num++;
+                    t_num = i + 1;
+                    break;
                 }
             }
         }

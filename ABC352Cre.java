@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ABC352C {
+public class ABC352Cre {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
@@ -11,7 +11,7 @@ public class ABC352C {
             }
         }
 
-        int a_total = 0;
+        long a_total = 0;
         for (int i = 0; i < N; i++) {
             a_total += AB[i][0];
         }
@@ -26,7 +26,7 @@ public class ABC352C {
                 max_head_height_index = i;
             }
         }
-        int total = a_total + head_height[max_head_height_index];
+        long total = a_total + head_height[max_head_height_index];
         System.out.println(total);
         scanner.close();
     }
